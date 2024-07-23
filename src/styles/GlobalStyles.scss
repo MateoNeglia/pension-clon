@@ -1,0 +1,67 @@
+
+/*backgrounds*/
+.u-background-dark-blue {
+    background-color: var(--color-dark-blue);
+}
+
+.u-background-medium-blue {
+    background-color: var(--color-medium-blue);
+}
+
+.u-background-bright-blue {
+    background-color: var(--color-bright-blue);
+}
+
+.u-background-light-blue {
+    background-color: var(--color-light-blue);
+}
+
+.u-background-lightest-blue {
+    background-color: var(--color-lightest-blue);
+}
+
+/*colors*/
+.u-color-dark-blue {
+    color: var(--color-dark-blue);
+}
+
+.u-color-medium-blue {
+    color: var(--color-medium-blue);
+}
+
+.u-color-bright-blue {
+    color: var(--color-bright-blue);
+}
+
+.u-color-light-blue {
+    color: var(--color-light-blue);
+}
+
+.u-color-lightest-blue {
+    color: var(--color-lightest-blue);
+}
+
+
+/*Work in progress: adaptar fuentes del figma */
+
+.u-titles {
+    font-size: 2em;    
+}
+
+.u-subtitles {
+    width: 311px;
+    height: 73px;
+    top: 185px;
+    left: 58px;
+    padding: 0px 26px 0px 0px;    
+}
+
+.u-paragraph {
+    width: 162px;
+    height: 48px;
+    top: 289px;
+    left: 58px;
+    padding: 0px 18px 2px 0px;
+    gap: 0px;
+    opacity: 0px;
+}

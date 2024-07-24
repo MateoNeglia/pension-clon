@@ -1,0 +1,53 @@
+.sup-main-container{
+    // cambiar por imagen correcta
+    background-image: url("https://img.freepik.com/free-photo/blue-balloons-with-copy-space-close-up_23-2148294765.jpg?w=1380&t=st=1721838851~exp=1721839451~hmac=386260f5b3bd7ca03a19c04337f27662369a206240f985f919e0c20bf07d97e4");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    margin: 20px;
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: center;
+    color: #acacab;
+    margin-bottom: 50px;
+}
+
+.titulo-text{
+    color: white;
+}
+
+// vista mobile test
+@media only screen and (max-width:600px) {
+    .container{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50%;
+        background-color: var( --color-bright-blue);
+    }
+    
+}

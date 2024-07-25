@@ -1,11 +1,13 @@
 .sup-main-container{
     // cambiar por imagen correcta
-    background-image: url("https://img.freepik.com/free-photo/blue-balloons-with-copy-space-close-up_23-2148294765.jpg?w=1380&t=st=1721838851~exp=1721839451~hmac=386260f5b3bd7ca03a19c04337f27662369a206240f985f919e0c20bf07d97e4");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/014/459/808/non_2x/modern-colorful-flow-line-poster-dynamic-3d-shape-wave-gradient-mesh-liquid-shape-in-neon-blue-background-color-abstract-lava-design-for-your-project-illustration-trendy-wallpaper-free-vector.jpg");
     background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-container{
@@ -22,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50%;
+    gap: 20%;
     margin: 20px;
 }
 
@@ -31,23 +33,28 @@
     justify-content: center;
     color: #acacab;
     margin-bottom: 50px;
+    font-size: 14px;
 }
 
 .titulo-text{
     color: white;
 }
 
+.titulo-decorator{
+    font-size: 50px;
+}
+
 // vista mobile test
 @media only screen and (max-width:600px) {
     .container{
-        height: 50%;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 50%;
-        background-color: var( --color-bright-blue);
+        gap: 10%;
+        
     }
     
 }

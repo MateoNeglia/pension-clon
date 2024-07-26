@@ -1,9 +1,9 @@
 import React from 'react'
-import './SingInMain.scss';
-import SignInForm from './SignInForm';
+import './CreatePasswordMain.scss';
+import CretePasswordForm from './CreatePasswordForm';
 import criteriaLogo from '../../assets/logo-lower-opacity.svg'
 
-function SignInMain() {
+function CreatePasswordMain() {
   return (
 <div className='sup-main-container'>
     <div className='main-container'>
@@ -12,7 +12,7 @@ function SignInMain() {
             <img src={criteriaLogo} alt='Criteria' className='logo'/>  
            
             </div>
-            <div className='form-container'> <SignInForm/></div>
+            <div className='form-container'> <CretePasswordForm/></div>
         </div>
     </div>
     <div className='bottom-container '>@ 2024 Criteria | Pension & benefits</div>
@@ -20,4 +20,4 @@ function SignInMain() {
   )
 }
 
-export default SignInMain
+export default CreatePasswordMain

@@ -3,9 +3,12 @@ import './CreatePasswordMain.scss';
 import CretePasswordForm from './CreatePasswordForm';
 import criteriaLogo from '../../assets/logo-lower-opacity.svg'
 
-function CreatePasswordMain() {
+
+
+
+export default function CreatePasswordMain() {
   return (
-<div className='sup-main-container'>
+    <div className='sup-main-container'>
     <div className='main-container'>
         <div className='container'>
             <div className='titulo-text '>  
@@ -20,4 +23,7 @@ function CreatePasswordMain() {
   )
 }
 
-export default CreatePasswordMain
+
+
+
+

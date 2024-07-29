@@ -3,9 +3,11 @@ import './SingInMain.scss';
 import SignInForm from './SignInForm';
 import criteriaLogo from '../../assets/logo-lower-opacity.svg'
 
-function SignInMain() {
+
+
+export default function SignInMain() {
   return (
-<div className='sup-main-container'>
+    <div className='sup-main-container'>
     <div className='main-container'>
         <div className='container'>
             <div className='titulo-text '>  
@@ -20,4 +22,5 @@ function SignInMain() {
   )
 }
 
-export default SignInMain
+
+

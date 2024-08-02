@@ -1,14 +1,13 @@
-import './App.css';
-import './styles/GlobalStyles.scss';
+import "./App.css";
+import "./styles/GlobalStyles.scss";
 
-import SignInMain from './components/SignIn/SignInMain';
-import CreatePasswordMain from './components/CreatePassword/CreatePasswordMain';
+import SignInMain from "./components/SignIn/SignInMain";
+import CreatePasswordMain from "./components/CreatePassword/CreatePasswordMain";
 
 function App() {
   return (
     <div className="">
-      {/* TEST RUN */}
-      <CreatePasswordMain/>
+      TEST RUN 
     </div>
   );
 }

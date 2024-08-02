@@ -1,0 +1,20 @@
+.u-absoluteCenter {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.u-textAlignCenter {
+    text-align: center !important;
+}
+
+.u-centerBlock {
+    display: block !important;
+    margin: auto;
+}
+
+.u-felxColumn {
+    display: flex !important;
+    flex-direction: column !important;
+}

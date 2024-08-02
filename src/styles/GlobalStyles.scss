@@ -20,6 +20,14 @@
     background-color: var(--color-lightest-blue);
 }
 
+.u-password-card-background {
+    background-color: #9CD3EB80;
+}
+
+.u-pass-input-background {
+    background-color: #E3F5FF;
+}
+
 /*colors*/
 .u-color-dark-blue {
     color: var(--color-dark-blue);
@@ -40,6 +48,21 @@
 .u-color-lightest-blue {
     color: var(--color-lightest-blue);
 }
+
+.u-color-white {
+    color: #FFFFFF;
+}
+
+.u-password-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 680px;
+    height: 656px;
+    border-radius: 24px;
+}
+
 
 
 /*Work in progress: adaptar fuentes del figma */
@@ -64,4 +87,8 @@
     padding: 0px 18px 2px 0px;
     gap: 0px;
     opacity: 0px;
+}
+
+.u-linkStyleless {
+    text-decoration: none !important;
 }

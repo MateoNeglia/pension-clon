@@ -1,0 +1,9 @@
+.input-pass {    
+    padding: 12px 10px;
+    border: none;
+    border-radius: 12px;
+
+    &:focus {
+        outline: none;
+      }
+}

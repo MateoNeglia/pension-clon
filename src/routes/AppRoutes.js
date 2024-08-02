@@ -1,1 +1,0 @@
-/**Here we build the routes of the app */

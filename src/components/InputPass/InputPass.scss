@@ -7,3 +7,19 @@
         outline: none;
       }
 }
+
+.input-pass-wrapper {
+
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.hidePassword-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

@@ -53,6 +53,40 @@
     color: #FFFFFF;
 }
 
+/*Placeholder Colors*/
+.u-placeholder-dark-blue::placeholder {
+    color: var(--color-dark-blue);
+}
+
+.u-placeholder-medium-blue::placeholder {
+    color: var(--color-medium-blue);
+}
+
+.u-placeholder-bright-blue::placeholder {
+    color: var(--color-bright-blue);
+}
+
+.u-placeholder-light-blue::placeholder {
+    color: var(--color-light-blue);
+}
+
+.u-placeholder-lightest-blue::placeholder {
+    color: var(--color-lightest-blue);
+}
+
+
+.u-transparent-white-background {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.u-color-lighter-blue {
+    color: #85D1EF;
+}
+
+.u-fog-white-background {
+    background-color: #E9EEF3;
+}
+
 .u-password-card {
     display: flex;
     justify-content: center;

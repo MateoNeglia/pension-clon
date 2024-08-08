@@ -33,7 +33,7 @@ const ForgotPassword = () => {
             <InputPass valueInput={email} setValue={setEmail} placeholder='Por favor ingresa tu email' inputType='email'/>
             <ActionButton buttonType = 'submit' buttonText = 'Enviar' buttonColor='u-color-white' buttonBackground='u-background-dark-blue'/>            
         </form>
-        <a href='/#' className = 'u-linkStyleless u-color-dark-blue'>&lt; Regresar</a>
+        <a href='/' className = 'u-linkStyleless u-color-dark-blue'>&lt; Regresar</a>
       </div>      
       {message && <p>{message}</p>}
       <div className='u-displayFlex u-color-white u-paddingAl login-footer'>

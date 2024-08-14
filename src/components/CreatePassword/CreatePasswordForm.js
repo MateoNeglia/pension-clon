@@ -1,18 +1,12 @@
 import React from 'react'
 import './CreatePasswordForm.scss'
-
 import PasswordStrengthStepMeter from '../PasswordStrengthMeter/PasswordStrengthStepMeter'
 import { useState } from 'react'
-
-
 
 export default function CreatePasswordForm() {
   const [hidePassword, setHidePassword] = useState(true)
   const [passwordChecker, setPasswordChecker] = useState('')
   
-
-  
- 
 
   return (
     <div className='wrapper u-background-light-blue'>

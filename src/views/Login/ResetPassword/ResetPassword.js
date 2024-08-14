@@ -4,21 +4,25 @@ import { ActionButton } from '../../../components/ActionButton/ActionButton';
 import './ResetPassword.scss';
 import { ReactComponent as Logo } from '../../../assets/logo-lower-opacity.svg';
 import { ReactComponent as MessageBubble } from '../../../assets/message-bubble.svg';
+import PasswordStrengthStepMeter from '../../../components/PasswordStrengthMeter/PasswordStrengthStepMeter';
 
 const ResetPassword = () => {
-  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordReCheck, setPasswordReCheck] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    setMessage(`If an account with ${email} exists, a password reset email has been sent.`);
+    setMessage(`If an account with ${password} exists, a password reset email has been sent.`);
   };
 
   return (
     <div className='forgot-component'>      
-      <Logo className='logo-pass-flow'/>
-      <button className='sign-in-button'>Sign In</button>
+      <a href='/'>
+        <Logo className='logo-pass-flow'/>
+      </a>
+      <a className='sign-in-button u-linkStyleless' href="/">Sign In</a>
       <div className='u-password-card u-password-card-background '>
         <div className='u-paddingVl'>
             <MessageBubble/>
@@ -26,8 +30,9 @@ const ResetPassword = () => {
         
         <h2 className='u-color-dark-blue u-marginAn'>Reestablecer Contraseña</h2>        
         <form onSubmit={handleSubmit} className='u-felxColumn u-marginVm'>
-            <InputPass valueInput={email} setValue={setEmail} placeholder='Ingresa tu nueva contraseña' inputType='password'/>
-            <InputPass valueInput={email} setValue={setEmail} placeholder='Repetir contraseña' inputType='password'/>
+            <InputPass valueInput={password} setValue={setPassword} placeholder='Ingresa tu nueva contraseña' inputType='password'/>
+            <PasswordStrengthStepMeter password={password}/>
+            <InputPass valueInput={passwordReCheck} setValue={setPasswordReCheck} placeholder='Repetir contraseña' inputType='password'/>
             <ActionButton buttonType = 'submit' buttonText = 'Enviar' buttonColor='u-color-white' buttonBackground='u-background-dark-blue'/>            
         </form>
         <a href='/#' className = 'u-linkStyleless u-color-dark-blue'>&lt; Regresar</a>

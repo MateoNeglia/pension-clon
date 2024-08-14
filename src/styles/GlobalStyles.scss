@@ -126,3 +126,15 @@
 .u-linkStyleless {
     text-decoration: none !important;
 }
+
+.sign-in-button {
+    background-color: #E3F5FF;
+    color: #042E5D;  
+    position: absolute;
+    top: 2%;
+    right: 3%;  
+    border: none;
+    border-radius: 5px;
+    padding: .2em .5em;
+    cursor: pointer;
+  }

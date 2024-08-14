@@ -23,10 +23,11 @@ export const InputPass = ({ valueInput, setValue, placeholder, inputType, inputB
         placeholder={placeholder}
         type={inputTypeState} 
         required
-        className= {`input-pass u-marginVm u-Width100 ${inputColor} ${inputBackground} ${placeholderColor} `}
+        className= {`input-pass u-marginVm u-Width95 ${inputColor} ${inputBackground} ${placeholderColor} `}
       />
       {inputType === 'password' && (
-        <span className='hidePassword-btn' onClick={togglePasswordVisibility}>
+        <span className={`hidePassword-btn ${inputColor} `}
+              onClick={togglePasswordVisibility}>
           {inputTypeState === 'password' ? <VisibilityOutlinedIcon/> : <VisibilityOffOutlinedIcon/>}
         </span>
       )}

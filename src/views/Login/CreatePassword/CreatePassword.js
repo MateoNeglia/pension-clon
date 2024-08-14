@@ -1,16 +1,17 @@
-import React from 'react'
-import './Login.scss';
-//import SignInForm from './SignInForm';
-import criteriaLogo from '../../assets/logo-lower-opacity.svg';
-import { ActionButton } from '../../components/ActionButton/ActionButton';
-import { InputPass } from '../../components/InputPass/InputPass';
+import React from 'react';
+import './CreatePassword.scss';
+import criteriaLogo from '../../../assets/logo-lower-opacity.svg';
 import { useState } from 'react';
+import { ActionButton } from '../../../components/ActionButton/ActionButton';
+import { InputPass } from '../../../components/InputPass/InputPass';
+import PasswordStrengthStepMeter from '../../../components/PasswordStrengthMeter/PasswordStrengthStepMeter';
 
-export default function Login() {
+export default function CreatePasswordMain() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
-  return (
+    const [passwordReCheck, setPasswordReCheck] = useState('');
+    const [passwordChecker, setPasswordChecker] = useState('');
+    return (
     <div className='sup-main-container'>
     <div className='main-container'>
         <div className='container'>
@@ -21,20 +22,29 @@ export default function Login() {
             <div className='form-container'>
                 {/*<SignInForm/>*/}
                 <div className='login-card u-background-light-blue'>
-                        <h1 className='u-marginBs'>Sign In</h1>
+                        <h1 className='u-marginBs'>Crear Contraseña</h1>
                         <span className='u-color-white u-marginBl'>Bienvenidos a Criteria Pension & Benefits</span>
                         <span className='text-divider' >Ingresa tus datos</span>
                     <form className='u-felxColumn u-marginVm' action=''>                        
                             <InputPass valueInput={email} 
                                        setValue={setEmail} 
-                                       placeholder='Ingresa tu email' 
+                                       placeholder='Email' 
                                        inputType='email' 
                                        inputBackground='u-transparent-white-background'
                                        inputColor='u-color-lightest-blue'
                                        placeholderColor='u-placeholder-lightest-blue'/>
                             <InputPass valueInput={password}  
                                        setValue={setPassword}  
-                                       placeholder='Ingresa tu nueva contraseña' 
+                                       placeholder='Crear Contraseña' 
+                                       inputType='password' 
+                                       inputBackground='u-transparent-white-background'
+                                       inputColor='u-color-lightest-blue'
+                                       placeholderColor='u-placeholder-lightest-blue'/>
+
+                            <PasswordStrengthStepMeter password={password}/>
+                            <InputPass valueInput={passwordReCheck}  
+                                       setValue={setPasswordReCheck}  
+                                       placeholder='Repetir Contraseña' 
                                        inputType='password' 
                                        inputBackground='u-transparent-white-background'
                                        inputColor='u-color-lightest-blue'

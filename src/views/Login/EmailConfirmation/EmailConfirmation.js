@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { InputPass } from '../../../components/InputPass/InputPass';
-import { ActionButton } from '../../../components/ActionButton/ActionButton';
-import './ForgotPassword.scss';
+import './EmailConfirmation.scss';
 import { ReactComponent as Logo } from '../../../assets/logo-lower-opacity.svg';
-import { ReactComponent as MessageBubble } from '../../../assets/message-bubble.svg';
+import { ReactComponent as EmailSent } from '../../../assets/email-sent.svg';
 import { useNavigate } from 'react-router-dom';
 
-const ForgotPassword = () => {
+const EmailConfirmation = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
@@ -25,17 +23,14 @@ const ForgotPassword = () => {
       <a className='sign-in-button u-linkStyleless' href="/">Sign In</a>
       <div className='u-password-card u-password-card-background '>
         <div className='u-paddingVl'>
-          <MessageBubble/>
-        </div>        
-        <h2 className='u-color-dark-blue u-marginAn'>¿Olvidaste tu Contraseña?</h2>
-        <span className='u-color-white u-marginAm'>
-            Ingresa tu email para resetear tu contraseña:
-        </span>
-        <form onSubmit={handleSubmit} className='u-felxColumn u-marginVm'>
-            <InputPass valueInput={email} setValue={setEmail} placeholder='Por favor ingresa tu email' inputType='email'/>
-            <ActionButton buttonType = 'submit' buttonText = 'Enviar' buttonColor='u-color-white' buttonBackground='u-background-dark-blue'/>            
-        </form>
-        <a href='/' className = 'u-linkStyleless u-color-dark-blue'>&lt; Regresar</a>
+            <EmailSent/>
+        </div>
+        <p>
+            Hemos enviado un enlace para restablecer su contraseña a la dirección de correo electrónico proporcionada. 
+
+            Por favor, revise su bandeja de entrada y Spam.
+            Ingresa tu email para resetear tu contraseña
+        </p>
       </div>      
       {message && <p>{message}</p>}
       <div className='u-displayFlex u-color-white u-paddingAl login-footer'>
@@ -56,4 +51,4 @@ const ForgotPassword = () => {
   );
 };
 
-export default ForgotPassword;
+export default EmailConfirmation;

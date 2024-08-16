@@ -1,51 +1,35 @@
 import React, { useEffect, useState } from "react";
 import "./PasswordStrengthStepMeter.scss";
-
 import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-
 export default function PasswordStrengthStepMeter({ password }) {
   const [progress, setProgress] = useState("");
   const [message, setMessage] = useState("");
-  const [passwordValue, setPasswordValue] = useState("");
 
   useEffect(() => {
     handlePasswordCheck(password);
-  }, [password]);
+  }, [password]); 
 
   const handlePasswordCheck = (password) => {
     const strengthChecks = {
-      length: 0,
-      hasUpperCase: false,
-      hasLowerCase: false,
-      hasNumber: false,
-      hasSymbol: false,
+      length: password.length >= 8,
+      hasUpperCase: /[A-Z]+/.test(password),
+      hasLowerCase: /[a-z]+/.test(password),
+      hasNumber: /[0-9]+/.test(password),
+      hasSymbol: /[^A-Za-z0-9]+/.test(password),
     };
 
-    strengthChecks.length = password.length >= 8 ? true : false;
-    strengthChecks.hasUpperCase = /[A-Z]+/.test(password);
-    strengthChecks.hasLowerCase = /[a-z]+/.test(password);
-    strengthChecks.hasNumber = /[0-9]+/.test(password);
-    strengthChecks.hasSymbol = /[^A-Za-z0-9]+/.test(password);
+    const verifiedList = Object.values(strengthChecks).filter(Boolean);
+    const strength = 
+      verifiedList.length === 5 ? "Fuerte" :
+      verifiedList.length >= 2 ? "Media" :
+      "Débil";
 
-    let verifiedList = Object.values(strengthChecks).filter((value) => value);
-
-    let strenght =
-      verifiedList.length === 5
-        ? "Fuerte"
-        : verifiedList.length >= 2
-          ? "Media"
-          : "Débil";
-
-    setPasswordValue(password);
     setProgress(`${(verifiedList.length / 5) * 100}%`);
-    setMessage(strenght);
-
-    console.log(message);
+    setMessage(strength);
   };
 
   const getActiveColor = (type) => {
@@ -70,7 +54,8 @@ export default function PasswordStrengthStepMeter({ password }) {
       <Accordion 
         className="u-marginVm meter-text"
         sx={{
-          backgroundColor: '#089CAD4D', 
+          backgroundColor: '#089CAD4D',
+          borderRadius: '12px !important', 
           color: '#FFFFFF',                
           '&:before': {
             display: 'none',                    
@@ -94,6 +79,5 @@ export default function PasswordStrengthStepMeter({ password }) {
           </AccordionDetails>
       </Accordion>
     </div>
-    
   );
 }

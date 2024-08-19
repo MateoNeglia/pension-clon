@@ -1,0 +1,90 @@
+//Card 1
+
+.sectionTwoCardOne {
+  width: 25% !important;
+  margin: 20px 0px 20px 20px;
+  background-color: rgb(177, 177, 175);
+  box-shadow: 2px 15px 63px -17px rgba(0, 0, 0, 0.404);
+}
+
+.card-items {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  filter: drop-shadow(4px 16px 20px #00000021);
+}
+
+//Card 2
+.sectionTwoCardTwo {
+  margin: 20px;
+  box-shadow: 2px 15px 63px -17px rgba(0, 0, 0, 0.404);
+  background-color: rgb(177, 177, 175);
+}
+
+.cardTwo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardTwo-header {
+  display: flex;
+  justify-content: space-between;
+  span {
+    color: rgb(132, 134, 136);
+  }
+}
+
+.cardTwo-header-value {
+  font-size: 52px;
+  color: rgba(13, 69, 133, 0.938);
+}
+.cardTwo-graph {
+  height: 300px;
+}
+.cardTwo-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.ref-color-1 {
+  background-color: rgb(241, 9, 9);
+  width: 20px;
+  content: "";
+  min-height: 100%;
+}
+.ref-color-2 {
+  background-color: rgb(29, 197, 51);
+  width: 20px;
+  content: "";
+  min-height: 100%;
+}
+.ref-color-3 {
+  background-color: rgb(11, 53, 167);
+  width: 20px;
+  content: "";
+  min-height: 100%;
+}
+
+//vista mobile
+@media only screen and (max-width: 600px) {
+  .sectionTwoMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectionTwoCardOne {
+    box-shadow: 2px 15px 63px -17px rgba(0, 0, 0, 0.192);
+    background-color: rgb(180, 187, 192);
+    width: 90% !important;
+    margin: 10px;
+  }
+
+  .sectionTwoCardTwo {
+    visibility: hidden;
+  }
+}

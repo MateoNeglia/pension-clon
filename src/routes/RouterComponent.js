@@ -4,6 +4,7 @@ import ResetPassword from '../views/Login/ResetPassword/ResetPassword.js';
 import ForgotPassword from '../views/Login/ForgotPassword/ForgotPassword.js';
 import CreatePassword from '../views/Login/CreatePassword/CreatePassword.js';
 import EmailConfirmation from '../views/Login/EmailConfirmation/EmailConfirmation.js';
+import MainDashboard from '../views/Dashboard/MainDashboard.js';
 import Login from '../views/Login/Login.js';
 
 export default function RouterComponent() {
@@ -13,7 +14,8 @@ export default function RouterComponent() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/create-password" element={<CreatePassword />} />
         <Route path="/email-confirmation" element={<EmailConfirmation />} />
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<MainDashboard />} />        
       </Routes>
     );
   }

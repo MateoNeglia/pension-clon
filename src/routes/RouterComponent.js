@@ -5,6 +5,7 @@ import ForgotPassword from '../views/Login/ForgotPassword/ForgotPassword.js';
 import CreatePassword from '../views/Login/CreatePassword/CreatePassword.js';
 import EmailConfirmation from '../views/Login/EmailConfirmation/EmailConfirmation.js';
 import Login from '../views/Login/Login.js';
+import MainDashboard from '../views/Dashboard/MainDashboard.js';
 
 export default function RouterComponent() {
     return (
@@ -14,6 +15,8 @@ export default function RouterComponent() {
         <Route path="/create-password" element={<CreatePassword />} />
         <Route path="/email-confirmation" element={<EmailConfirmation />} />
         <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<MainDashboard/>} />
+
       </Routes>
     );
   }

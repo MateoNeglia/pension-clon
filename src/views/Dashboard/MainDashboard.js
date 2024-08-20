@@ -1,13 +1,13 @@
 import React from 'react'
-import './MainDashboard.scss';
-import { useState } from 'react';
+import SubSectionTwo  from './subSectionTwo/subSectionTwo'
+import "./MainDashboard.scss"
 
 export default function MainDashboard() {
-    
-
   return (
-    <div className='dashboard-container'>
-        HERE
+    <div className='u-displayGrid section-two-main'>
+      
+       <div className=''><SubSectionTwo/></div>
+
     </div>
   )
 }

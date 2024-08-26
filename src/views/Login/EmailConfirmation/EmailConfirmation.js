@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './EmailConfirmation.scss';
 import { ReactComponent as Logo } from '../../../assets/logo-lower-opacity.svg';
 import { ReactComponent as EmailSent } from '../../../assets/email-sent.svg';
-import { useNavigate } from 'react-router-dom';
+
 
 const EmailConfirmation = () => {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    navigate('/reset-password');
-    setMessage(`If an account with ${email} exists, a password reset email has been sent.`);
-  };
 
   return (
     <div className='forgot-component'> 
@@ -31,8 +22,7 @@ const EmailConfirmation = () => {
             Por favor, revise su bandeja de entrada y Spam.
             Ingresa tu email para resetear tu contraseña
         </p>
-      </div>      
-      {message && <p>{message}</p>}
+      </div>
       <div className='u-displayFlex u-color-white u-paddingAl login-footer'>
         <div>
           <span>

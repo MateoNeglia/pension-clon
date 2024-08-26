@@ -18,3 +18,19 @@
     display: flex !important;
     flex-direction: column !important;
 }
+
+.u-justifySpaceBetween {
+    justify-content: space-between !important;
+}
+
+.u-flexWrap {
+    flex-wrap: wrap;
+}
+
+.u-alignSelfEnd {
+    align-self: self-end;
+}
+
+.u-alignItems {
+    align-items: center !important;
+}

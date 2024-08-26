@@ -1,12 +1,5 @@
 //Card 1
 
-.sectionTwoCardOne {
-  width: 25% !important;
-  margin: 20px 0px 20px 20px;
-  background-color: rgb(177, 177, 175);
-  box-shadow: 2px 15px 63px -17px rgba(0, 0, 0, 0.404);
-}
-
 .card-items {
   flex-direction: column;
   justify-content: center;
@@ -74,8 +67,8 @@
   .sectionTwoMain {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
   }
   .sectionTwoCardOne {
     box-shadow: 2px 15px 63px -17px rgba(0, 0, 0, 0.192);

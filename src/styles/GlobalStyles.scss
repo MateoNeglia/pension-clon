@@ -28,6 +28,10 @@
     background-color: #E3F5FF;
 }
 
+.u-white-background {
+    background-color: #FFFFFF !important;
+}
+
 /*colors*/
 .u-color-dark-blue {
     color: var(--color-dark-blue);
@@ -51,6 +55,14 @@
 
 .u-color-white {
     color: #FFFFFF;
+}
+
+.u-color-success {
+    color: #4AA785;
+}
+
+.u-color-title-card {
+    color:#A3AED0;
 }
 
 /*Placeholder Colors*/
@@ -97,7 +109,13 @@
     border-radius: 24px;
 }
 
+.u-main-font-family {
+    font-family: Gotham Rounded;
+}
 
+.u-secondary-font-family {
+    font-family: Open Sans !important;
+}
 
 /*Work in progress: adaptar fuentes del figma */
 
@@ -146,3 +164,75 @@
     padding: 1em;    
 }
 
+.default-data-card-bg {
+    background-color: #F7F9FB;
+    color:#2B3674;    
+}
+
+.seccondary-data-card-bg {
+    background: linear-gradient(to bottom right, #042E5D, #85D1EF);
+    color: #FFFFFF;    
+    background-image: url("../assets/login-vector-background.svg");
+    background-size: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.seccondary-data-card-side-bg {
+    background: 
+        linear-gradient(to right, #85D1EF, #214584, #002E61 ), 
+        url("../assets/bubble-image.png");
+    background-size: cover;
+    background-blend-mode: multiply; 
+    color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.card-label {
+    font-family: Gotham Rounded;
+    font-size: 14px;
+    font-weight: 350;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.card-price {
+    font-family: Gotham Rounded;
+    font-size: 24px;
+    font-weight: 350;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.card-sub-label {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.card-icon-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(to bottom right, #042E5D, #85D1EF);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.seccondary-card-icon-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    color: #042E5D;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}

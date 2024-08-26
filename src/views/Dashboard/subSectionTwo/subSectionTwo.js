@@ -10,13 +10,14 @@ import CurrencyExchangeOutlinedIcon from "@mui/icons-material/CurrencyExchangeOu
 // import { useTranslation } from "react-i18next";
 //componentes
 import { CardOneItems } from "../../../components/SubSectionTwo/CardOne/CardOneItems";
+import CardTitleWSelect from '../../../components/CardTitleWSelect/CardTitleWSelect';
 
 export default function SubSectionTwo() {
   
   return (
-    <div className="u-displayFlex u-Width100 u-Height100  sectionTwoMain ">
+    <div className="u-displayFlex u-flexWrap u-Width100 sectionTwoMain ">
       {/* cardOne 1 */}
-      <div className="base-data-card u-Width25  u-Height100  sectionTwoCardOne ">
+      <div className="base-data-card u-Height100 default-data-card-bg u-marginAm">
         <div className="u-subtitles u-color-bright-blue">
           Movimientos de cartera
         </div>
@@ -49,19 +50,14 @@ export default function SubSectionTwo() {
       </div>
 
       {/* cardTwo 2 */}
-      <div className="base-data-card u-Width100 u-Height100 sectionTwoCardTwo">
+      <div className="base-data-card u-Height100 default-data-card-bg u-marginAm">
         <div className="cardTwo-content">
-          <div className="u-subtitles u-color-bright-blue">
-            Movimientos de Cartera
+          <div className="u-color-bright-blue">
+            <CardTitleWSelect customTitle='Movimiento de Cartera'/>                    
           </div>
           <div className="cardTwo-header">
             <div className="cardTwo-header-value">
               U$S 5.987,34 <span>Saldo Acumulado</span>
-            </div>
-
-            <div>
-              DowpDownMenu
-           
             </div>
           </div>
           <div className="cardTwo-graph">Grafico</div>

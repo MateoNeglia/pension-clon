@@ -10,7 +10,7 @@ export default function CreatePasswordMain() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [passwordReCheck, setPasswordReCheck] = useState('');
-    const [passwordChecker, setPasswordChecker] = useState('');
+    //const [passwordChecker, setPasswordChecker] = useState('');
     return (
     <div className='sup-main-container'>
     <div className='main-container'>

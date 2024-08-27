@@ -1,5 +1,5 @@
 import React from 'react';
-import "./SubSectionThree.scss"
+import "./subSectionThree.scss"
 import HeadsetMicOutlinedIcon from '@mui/icons-material/HeadsetMicOutlined';
 import { ActionButton } from '../../../components/ActionButton/ActionButton';
 import  DonutChart  from '../../../components/DonutChart/DonutChart';

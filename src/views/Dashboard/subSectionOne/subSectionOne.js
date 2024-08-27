@@ -1,5 +1,5 @@
 import React from 'react';
-import "./SubSectionOne.scss"
+import "./subSectionOne.scss"
 import BarChartIcon from '@mui/icons-material/BarChart';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';

@@ -9,6 +9,7 @@ import WalletOutlinedIcon from '@mui/icons-material/WalletOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import MultipleLinesChart from '../../../components/MultipleLinesChart/MultipleLinesChart';
 
+
 export default function SubSectionOne() {
   let currentPercentageValue = 0;
 

@@ -4,15 +4,14 @@ import './CardOneItems.scss'
 
 export const CardOneItems = ({icon, descripcion, value, valueType}) => {
   return (
-    <div className='base-data-card  sub-card-main-container  '>
-
-    <div className=''>{icon}</div>
-
-    <div className='sub-card-container'>
-      <div className='subtitle-alpha'>{descripcion}</div>
-      <span className='sub-card-value'>{valueType} {value}</span>
-    </div>
-
+    <div className='base-data-card default-data-card-bg u-displayFlex u-marginAm nested-card'>
+      <div className='card-icon-container'>
+        {icon}
+      </div>
+      <div className='u-felxColumn u-marginHm'>
+        <div className='card-label u-color-title-card'>{descripcion}</div>
+        <span className='card-price'>{valueType} {value}</span>
+      </div>
     </div>
   )
 }

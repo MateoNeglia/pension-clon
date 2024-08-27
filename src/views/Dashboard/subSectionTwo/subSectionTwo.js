@@ -11,6 +11,7 @@ import CurrencyExchangeOutlinedIcon from "@mui/icons-material/CurrencyExchangeOu
 //componentes
 import { CardOneItems } from "../../../components/SubSectionTwo/CardOne/CardOneItems";
 import CardTitleWSelect from '../../../components/CardTitleWSelect/CardTitleWSelect';
+import VerticalBarsChart from "../../../components/VerticalBarsChart/VerticalBarsChart";
 
 export default function SubSectionTwo() {
   
@@ -18,7 +19,7 @@ export default function SubSectionTwo() {
     <div className="u-displayFlex u-flexWrap u-Width100 sectionTwoMain ">
       {/* cardOne 1 */}
       <div className="base-data-card u-Height100 default-data-card-bg u-marginAm">
-        <div className="u-subtitles u-color-bright-blue">
+        <div className="card-label u-color-bright-blue">
           Movimientos de cartera
         </div>
         <div className="card-items u-Width100 u-displayFlex">
@@ -60,30 +61,8 @@ export default function SubSectionTwo() {
               U$S 5.987,34 <span>Saldo Acumulado</span>
             </div>
           </div>
-          <div className="cardTwo-graph">Grafico</div>
-          <div className="cardTwo-footer">
-            <span>
-              {" "}
-              <span className="ref-color-1">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </span>{" "}
-              Extracciones{" "}
-            </span>
-            <span>
-              {" "}
-              <span className="ref-color-2">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </span>{" "}
-              Depositos
-            </span>
-            <span>
-              {" "}
-              <span className="ref-color-3">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </span>{" "}
-              Evolucion de la cartera
-            </span>
-          </div>
+          <VerticalBarsChart />
+          
         </div>
       </div>
     </div>

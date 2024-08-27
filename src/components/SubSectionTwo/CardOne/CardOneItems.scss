@@ -1,3 +1,6 @@
+.nested-card {
+  width: 277px;
+}
 .sub-card-main-container {
   display: flex;
   align-items: center;
@@ -17,15 +20,6 @@
 .sub-card-value {
   font-size: 24px;
   color: rgba(13, 69, 133, 0.938);
-}
-
-.sub-card-icon {
-  box-shadow: 2px 15px 63px -17px rgba(0, 0, 0, 0.66);
-  background-color: rgba(13, 69, 133, 0.938);
-  border-radius: 100%;
-  font-size: 48px;
-  color: white;
-  padding: 5px;
 }
 
 .subtitle-alpha {

@@ -1,7 +1,7 @@
 import React from 'react';
 import SubSectionTwo  from './subSectionTwo/subSectionTwo';
-import SubSectionOne  from './SubSectionOne/SubSectionOne';
-import SubSectionThree  from './subSectionThree/SubSectionThree';
+import SubSectionOne  from './subSectionOne/subSectionOne';
+import SubSectionThree  from './subSectionThree/subSectionThree';
 import DashboardHeader from './DashboardHeader/DashboardHeader';
 import "./MainDashboard.scss";
 
